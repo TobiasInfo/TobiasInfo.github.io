@@ -1,0 +1,70 @@
+* {
+    color: black;
+    font-size: 1.1em;
+    font-family: Times New Roman,arial; 
+
+}
+
+body {
+    background-color: rgba(143, 143, 143, 1.0);
+}
+h1 {
+    border: 3px black double;
+    border-radius: 25px / 25px; /* Arrondi de la bordure*/
+    box-shadow: 6px 10px 15px black; /* Ombre de la bordure déplacement vertical - horizontal - adoussisement - couleur*/
+    color: red;
+    clear: left;
+    font-size: 2.4em;
+    text-align: center;
+    font-family: arial black,arial;
+}
+
+h3 {
+    text-decoration: underline;
+    text-shadow: 5px 5px 20px blue;
+    font-size: 1.6em;
+    color: blue;
+    font-family: arial black,arial;
+    font-weight: bold;
+}
+
+.annee {
+    font-style: italic;
+}
+
+#bloc_contact{    
+    display: flex;
+    align-items: center;
+}
+
+.contact {
+
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+    height: 0.7em;
+}
+
+.imgflotant {
+    float: left;
+}
+
+
+.detailAAC {
+    position: relative;
+    margin: 150px auto 0;
+    left: 100px;
+    width: 900px;
+}
+
+li {
+    list-style-type: '>';
+}
+
+.AAC_puce {
+    list-style-type: circle;
+}
+
+.bcontact {
+    margin: auto;
+}
