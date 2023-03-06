@@ -1,74 +1,592 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <link rel="stylesheet" href="cv en cours.css" />
-  <title>CV Tobias SAVARY</title>
-</head> 
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tobias SAVARY</title>
+    <link rel="stylesheet" href="bulma.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"> -->
+    <link rel="stylesheet" href="style2.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+  </head>
+  <body class = "is-family-primary">
+    <header>
+      <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item">
+            <img src="img/UTC.png" id="UTC">
+          </a>
+          <p class="navbar-item">Tobias Savary</p>
+        </div>
+        <div class="navbar-menu">
+          <ul class="navbar-item">
+            <!-- navigation bar -->
+            <li><a class="navbar-item" href="#home">Home</a></li>
+            <li><a class="navbar-item" href="#about">About</a></li>
+            <li><a class="navbar-item" href="#projects">Projets</a></li>
+            <li><a class="navbar-item" href="#experiences">Experiences</a></li>
+            <li><a class="navbar-item" href="#education">Education</a></li>
+            <li><a class="navbar-item" href="#skills">Skills</a></li>
+            <li><a class="navbar-item" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
-<body>
-  <header>    
-  <div id=bloc_contact>
-    <p class=img>
-        <img class="imgflotant" src="developpement_web_2.jpg" alt="Photo informatique" title="Photo Informatique"/>
-    </p>
-    <span class=bcontact>
-    <p class="contact"> Tobias SAVARY </p>
-    <p class="contact"> savarytobias@hotmail.com  </p>
-    <p class="contact"> 06.50.19.90.18 </p>
-  </span>
+<!-- 6000FF couleur de tobias savary dans la bannière -->
+    <section class="hero py-6" id="home">
+      <!-- <img src="img/Banner.png" id="Banner"> -->
+      <div class="tile is-ancestor">
+        <div class = "tile is-3">
+          <img src="img/photo_LinkedIn.jpeg" id="Tobias">
+        </div>
+
+        <div class = "tile is-vertical">
+          <h1 class="is-size-1 is-capitalized has-text-centered my-6">Tobias Savary</h1>
+          <div class="has-text-centered">
+            <!-- <span id="cursor">|</span> -->
+            <div id="write" > </div>
+            <!-- <p id="write" >I am a student in computer science at the Université de Technologie de Compiègne in first year of engineering cycle. </p> -->
+            <p>I am looking for a 6-month internship as an engineer assistant for September 2023.</p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+     
+
+    <section id="about" class = "">
+      <h2 class="is-size-2 is-capitalized pl-6 py-2">About me</h2>
+      <div class="px-6 has-text-justified">
+        <p>Hello, my name is Tobias Savary, I am a student in my first year of engineering studies at the University of Technology of Compiègne (UTC). 
+        </p>
+        <p>Previously, I studied at Polytech Grenoble. These two years at Polytech allowed me to acquire solid skills in mathematics and computer science but also in communication, listening and teamwork.
+            I continue to work every day to improve my skills whether it is within the UTC or on my own time. </p>
+
+        <p class="pb-1 ">I am currently looking for a 6-month internship as an assistant engineer.</p>
+
+      </div>
+    </section>
+
+     
+
+    <section id="projects">
+      <h2 class="is-size-2 is-capitalized my-5">Importants Projets</h2>
+
+      <ul>
+      <div  class= "tile is-ancestor">
+        
+        <div class="tile is-parent">
+
+          <li class=" tile is-child box card"> 
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="img/veterinary_project.png" alt="Python SQL image">
+              </figure>
+            </div>
+            <h3 class="media-content is-size-4 is-capitalized">Design and implement a database for a veterinary clinic in SQL with a Python interface</h3>
+            
+            <p class="has-text-justified">During this project, we implemented a database for a veterinary clinic. 
+              For this, I set up a database to manage the staff of the clinic (veterinarian 
+              and assistant), the customers, the animals of the clinic, the treatments 
+              and appointments... </p>
+            <p class="has-text-justified">This project allowed me to work on the database architecture with UML 
+              diagrams, on the implementation in SQL and finally on the user interface 
+              with Python. </p>
+          </li>
+        </div>
+
+        <div class="tile is-parent">
+          <li class=" tile is-child box card">
+
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="img/MachiKoro.png" alt="Object-Oriented-Programming-in-C++">
+              </figure>
+            </div>
+
+            <div class="card-content">
+              <h3 class="media-content is-size-4 is-capitalized">Object-oriented programming in C++ : design and development of the Machi Koro board game</h3>
+              <p class="has-text-justified">During this project, we implemented the Machi Koro board game. 
+                The objective of this project was to get familiar with object-oriented 
+                programming and to understand its concepts. In order to take into 
+                account the different extensions of the game, we designed an 
+                architecture which aims to be modular and reusable. At the end 
+                of the project, we implemented a graphical interface and an AI 
+                to make the game more interactive.
+              </p>
+            </div>
+          </li>
+        </div>
+        
+        <div class="tile is-parent">
+          <li class=" tile is-child box card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="img/SE.jpg" alt="expert system">
+              </figure>
+            </div>
+            <h3 class="media-content is-size-4 is-capitalized">Realization of an expert system in Lisp</h3>
+            <!-- <img src="project2.jpg" alt="Project 2"> -->
+            <p class="has-text-justified">We have realized an expert system at order 0+ allowing decision support 
+              in a banking system. This project allowed us to understand how an expert 
+              system works and to apply it on a real case. This project allows to know 
+              the conditions of a loan, to determine if a loan is possible or not...
+            </p>
+          </li>
+        </div>
+      </div>
+
+
+      <div  class= "tile is-ancestor">
+        <div class="tile   is-parent">
+          <li class=" tile is-child box card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="img/MAP401.png" alt="Image contours simplification">
+              </figure>
+            </div>
+            <h3 class="media-content is-size-4 is-capitalized">Image contours simplification</h3>
+            <p class="has-text-justified">Image contours simplification in C </p>
+            
+            <p class="has-text-justified">The objective of this project was to work on the simplification of 
+              bitmap images. For that, we took an image and tried to detect the 
+              contours. Once these contours were detected, we made simplifications 
+              using Bézier curves. These simplifications allowed us to obtain images 
+              that were sharper to the eye and less voluminous in memory.
+            </p>
+          </li>
+        </div>
+        <div class="tile   is-parent">
+          <li class=" tile is-child box card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="img/robot.png" alt="robot">
+              </figure>
+            </div>
+            <h3 class="media-content is-size-4 is-capitalized">Moving a robot</h3>
+            <p class="has-text-justified">Moving a robot in C</p>
+            
+            <p class="has-text-justified">During this project, we set up a game in which a robot has to move 
+              following the player's commands, either randomly without coming into 
+              contact with obstacles. For this, we randomly generated a map with 
+              rocks, water and roads and the robot had to move on the roads without 
+              colliding with them and without falling in the water.</p>
+          </li>
+          </div>
+            
+          <div class="tile   is-parent">
+          <li class=" tile is-child box card">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="img/Futoshiki.png" alt="board games (Futoshiki)">
+                </figure>
+              </div>
+              <h3 class="media-content is-size-4 is-capitalized">Creation of board games</h3>
+              <p class="has-text-justified">Creation of board games with Python (Scrabble, Futoshiki)</p>
+              
+              <p class="has-text-justified">This project is composed of 2 sub-projects.</p>
+              
+              <p class="has-text-justified">The first one is a Scrabble in Python. It allowed me to work on the 
+                basic concepts of programming, the algorithm and the separation of different modules.</p>
+                
+              <p class="has-text-justified">The second one is a Futoshiki also in Python. This one allowed me to reinforce my 
+                  algorithmic skills but also to work on the logical formalization of the problem 
+                  and the functioning of a SAT Solver. Indeed, before coding this game, we went 
+                  through a long design and formalization phase in order to formalize the problem 
+                  in propositional logic.</p>
+                  
+          </li>
+        </div>
+        </div>
+      </div>
+      <div  class= "tile is-ancestor">
+        <div class="tile   is-parent">
+          <li class=" tile is-child box card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="img/encoding_decoding.png" alt="encoding and decoding of encrypted messages">
+              </figure>
+            </div>
+            <h3 class="media-content is-size-4 is-capitalized">Phylogenetic tree processing, encoding and decoding of encrypted messages</h3>
+            <p class="has-text-justified">Phylogenetic tree processing, encoding and decoding of encrypted messages in C</p>
+
+            <p class="has-text-justified">This project consists of 2 independent parts.</p>
+            
+            <p class="has-text-justified">In the first one, we worked on the encoding and decoding of different messages. 
+              For that we used different means of encryption more or fewer complexes going from 
+              the code of Caesar to the encryption has part of mathematical formula.</p>
+
+            <p class="has-text-justified">In the second part, we treated phylogenetic trees. This tree treatment allowed 
+                us to work on the notions of binary search trees and balanced trees.</p>
+            
+          </li>
+          </div>
+        <div class="tile   is-parent">
+          <li class=" tile is-child box card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="img/maths.jpg" alt="Mathematical sets">
+              </figure>
+            </div>
+            <h3 class="media-content is-size-4 is-capitalized">Mathematical sets management</h3>
+            <p class="has-text-justified">Mathematical sets management with Ocaml</p>
+  
+            <p class="has-text-justified">During this project, we have implemented all the basic functions 
+            on mathematical sets (union, intersection, symmetrical difference, 
+            search for an element, membership of an element...).</p>
+            <p class="has-text-justified"> This project allowed me to understand functional programming and recursion.</p>
+          </li>
+          
+          <!-- <li class="tile is-child box">
+
+          </li> -->
+          </div>
+        </div>
+      </ul>
+        
+    </section>
+      
+     
+      
+    <section id="experiences">
+        
+      <h2 class="is-size-2 is-capitalized my-5">Experiences</h2>
+      <ul class= "container">
+        <div class="tile   is-parent">
+        <li class=" tile is-child box card is-6  ">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="img/library_work.png" alt="Python SQL image">
+              </figure>
+            </div>
+          <h3 class="media-content is-size-4 is-capitalized">Work in the university library</h3>
+          <p class="has-text-justified">Reception, promotion of digital resources, organization of events. . . <br></p>
+          
+          <p class="has-text-justified">This experience allows me to have an activity in parallel to my courses within the UTC. </p>
+          <p class="has-text-justified">During my permanence at the university library, I welcome and help students and readers, 
+            I take part in the management of books, I help in the promotion and the use of digital resources 
+            and I organize events or actions in favour of the development of students' general culture.<br><br></p>
+            
+          <p class="has-text-justified">Throughout this experience, I have developed methodological, rigorous, welcoming and discreet skills.<br></p>
+        </li>
+        
+        <li class=" tile is-child box card is-6  ">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="img/Graphical-Interface.png" alt="Python SQL image">
+              </figure>
+            </div>
+          <h3 class="media-content is-size-4 is-capitalized">Graphical interface to develop a game for learning debugging</h3>
+          <p class="has-text-justified">2 month excellence internships in the INRIA laboratory in Grenoble in order 
+            to realize a graphical interface to develop a game for learning debugging. <br> </p>
+            
+          <p class="has-text-justified">I did my excellence internship in the INRIA laboratory. During this internship I 
+              joined a team in order to work on the to work on the agdbentures project which 
+              aims to teach debugging to undergraduate students. This internship was very important 
+              for me because it allowed me to discover the research environment, to work within a 
+              team, to develop the team and to develop a lot of knowledge and skills needed in my 
+              personal and professional life. </p>
+          <p class="has-text-justified"> In particular, I was able to acquire communication, 
+                organisation and autonomy skills and more specific computer-related skills such 
+                as object-oriented programming concepts, team collaboration object-oriented programming, 
+                team collaboration, use of a version manager... . All these skills are essential for the 
+                engineering profession that I wish to pursue.<br></p>
+                
+
+        </li>
+        </div>
+
+        <div class="tile   is-parent">
+        <li class=" tile is-child box card is-6  ">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="img/administrativa-assistant.jpg" alt="Python SQL image">
+              </figure>
+            </div>
+          <h3 class="media-content is-size-4 is-capitalized">Professional internship in the Oise departmental services</h3>
+          <ul id="CDO">
+            <li> Multi-skilled administrative assistant - Social Works Committee [COS60] </li>
+            <li> Multi-skilled administrative assistant - Departmental House for Handicapped Persons of the Oise [MDPH60] </li>
+            <li> Receptionist agent - Oise Departmental Housing Information Agency [ADIL60] </li>
+          </ul>
+          
+          <p class="has-text-justified">I did my internship in 3 different structures: the ADIL, the MDPH and the COS. 
+            During this internship, I mainly worked as a receptionist and an assistant. 
+            This one-month internship was month internship was very important for me because 
+            it allowed me to discover the professional environment and to carry out tasks, 
+            allowing me to develop a lot of knowledge and skills needed in my personal and professional life.</p>
+          <p class="has-text-justified"> I was able to learn a lot of skills that are necessary in my personal and professional life. 
+              In particular, I was able to acquire communication skills, organisation, autonomy and versatility
+              which are essential for an indispensable for an engineer.<br></p>
+        </li>
+        
+        <li class=" tile is-child box card is-6  ">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="img/stage3e.jpeg" alt="Python SQL image">
+              </figure>
+            </div>
+          <h3 class="media-content is-size-4 is-capitalized">Observation internship in computer science at the Digital Department of the Departmental Council</h3>
+        </li>
+        </div>
+      </ul>
+        
+    </section>
+      
+     
+      
+    <section id="education" class = "">
+      <div class =>
+      <div class="grid-3-4">
+          <div class="education">
+            <h2 class="is-size-2 is-capitalized">Education</h2>
+          </div>
+      
+        <div class="grid-3-4-left-UTC">
+          <div class = "has-text-left has-text-justified">
+
+            <div class="media my-4">
+              <figure class="media-left">
+                <span class="is-medium icon">
+                  <img src="img/graduate.png" alt="Mathematical sets">
+                </span>
+              </figure>
+              
+              <h3 class="is-size-4 is-capitalized">University of Technology of Compiègne</h3>
+            </div>
+
+            <div class="grid-3-4-left-UTC-Content">
+            <p>Studying computer engineering at the UTC. <br></p>
+            <p>I have so far studied the following courses:<br></p>
+            <p>
+                <ul>
+                  <li> Design of relational and non-relational databases</li>
+                  <li> Object-oriented programming and design</li>
+                  <li> Web design and development</li>
+                  <li> Artificial Intelligence : Representation</li>
+                  <li> Engineering of safe software</li>
+                  <li> Operating systems: from concepts to programming</li>
+                  <li> Algorithmic and data structure</li>
+                  <li> Statistical methods for engineers</li>
+                  <li> Professional English - Level B2-C1</li>
+                  <li> English</li>
+                  <li> Introduction to law</li>
+                  <li> Ethics: multidisciplinary approach</li>
+                </ul>
+            </p>
+            </div>
+
+            <div class="grid-3-4-left-Polytech">
+            <div class="media my-4">
+              <figure class="media-left">
+                <span class="is-medium icon">
+                  <img src="img/graduate.png" alt="Mathematical sets">
+                </span>
+              </figure>
+              <h3 class="is-size-4 is-capitalized">Polytech Grenoble</h3>
+            </div>
+            </div>
+
+            <div class="grid-3-4-left-Polytech-Content">
+            <p class="has-text-justified">
+              Preparatory training integrated into the Polytech network of engineering schools, 
+              backed up by the ”Mathematics and Computer Science” courses of the University of 
+              Grenoble Alpes [UGA], including cross-disciplinary courses (English, project 
+              management, professional exploration, etc.). </p>
+            <p class="is-italic mt-1"> Ranking: 120th out of 1,564 students </p>
+            <p>
+              <h4 class="is-size-5 is-capitalized my-2">Computer Science :</h4>
+              <ul class="content  list">
+                <li class ="list-item">Basics of software development</li>
+                <li class ="list-item">Introduction to software and hardware architectures</li>
+                <li class ="list-item">Software project </li>
+                <li class ="list-item">System and programming environment principles of use </li>
+              </ul>
+
+              <ul>
+                <li>Algorithms & imperative programming</li>
+                <li>Algorithms and functional programming</li>
+              </ul>
+
+              <ul>
+                <li>Automata and languages </li>
+                <li>Introduction to logic </li>
+                <li>Computer methods and programming techniques</li>
+                <li>Structured reasoning</li>
+              </ul>
+
+              <h4 class="is-size-5 is-capitalized my-2">Mathematics :</h4>
+
+              <ul>
+                <li>Arithmetic and linear algebra </li>
+                <li>Bilinear algebra and applications </li>
+              </ul>
+
+              <ul>
+                <li>Elementary analysis & introduction to scientific computing </li>
+                <li>Advanced analysis </li>
+                <li>Deepening of series & integration</li>
+                <li>Sequences and series of functions, Fourier series</li>
+              </ul>
+            </p>
+            </div>
+          </div>
+        </div>
+  
+    
+        <!-- <div class="grid-3-4-right has-text-centered vertical-line"> -->
+          <div class="grid-3-4-right-UTC vertical-line">
+            <p class="circle "> 2022-Present</p>
+          </div>
+          
+          <div class="grid-3-4-right-Polytech vertical-line">
+
+          <p class="circle allign-polytech-2022 "> 2020-2022</p>
+
+          </div>
+        </div>
+
+     </div>
+    </div>
+    </section>
+
+     
+
+    <section id="skills">
+      <h2 class="is-size-2 is-capitalized">Skills</h2>
+    
+    <div class="tile is-ancestor">
+  <div class="tile is-vertical is-parent">
+    
+    <div class="tile is-child box">
+      <p class="title">Soft Skills</p>
+        <ul>
+          <li> English </li>
+          <li> French </li>
+          <li> German </li>
+          <li> Communication</li>
+          <li> Team working</li>
+          <li> Project management</li>
+          <li> Engineering</li>
+          <li> Programming </li>
+          <li> Childcare </li>  
+          <li> management</li>  
+          <li> Driving </li> 
+          <li> DataBases </li>
+          <li> Debugging </li>     
+        </ul>
+    </div>
   </div>
- 
-    <h1>Parcours des Ecoles d’Ingénieur Polytech (PEIP) </h1>
-  </header>
- 
-<h3> Compétences </h3>
+  <div class="tile is-parent">
+    <div class="tile is-child box">
+      <p class="title">Hard Skills</p>
+        <ul>
+          <li> Mathematics</li>
+          <li> C </li>
+          <li> C++ </li>
+          <li> Python </li>
+          <li> SQL </li>
+          <li> Bash </li>
+          <li> Markdown</li>
+          <li> Latex </li>
+          <li> HTML </li>
+          <li> CSS </li>
+          <li> ARM </li>
+          <li> Ocaml</li>
+          <li> Common Lisp</li>   
+        </ul>
+    </div>
+  </div>
+</div>
+    </section>
 
-<li> Utilisation aisée des logiciels bureautiques (word / excel / paint/ power-point…)</li>
-<li> Utilisation aisée d’applications mobiles diverses </li>
-<li> Programmation Ocaml, C et Python </li>
-<li> LV1 : Anglais (niveau B1) </li>
-<li> LV2 : Allemand (niveau scolaire) </li>
+     <section id="resume">
+      <h2 class="is-size-2 is-capitalized">Resume</h2>
+      <div class="has-text-centered py-6">
+          <a href="CV_SAVARY_Tobias_6_Months_Internship_Computer_Science_En_Fr.pdf" download class="button is-link">
+              Download my resume
+          </a>
+
+      </div>
+    </section>
+
+    <section id="contact" class = "">
+      <div class= "">
+
+        <h2 class="is-size-2 is-capitalized">Contact</h2>
+        <div class="has-text-centered is-flex is-align-items-center is-justify-content-center py-6">
+          
 
 
-<h3> Diplômes & formations </h3>
+        <div class="icon-contact">
+          <a onclick="document.getElementById('modal-mail').classList.add('is-active')">
+            <img src="img/icons8-rédiger-un-courrier-50.png" alt="Mail" width="32" height="32">
+          </a>
+        </div>
 
+        <div class="modal" id="modal-mail">
+          <div class="modal-background"></div>
+          <div class="modal-content">
+            <div class="box">
+              <p>Mail : savarytobias@hotmail.com</p>
+            </div>
+          </div>
+          <button class="modal-close is-large" aria-label="close" onclick="document.getElementById('modal-mail').classList.remove('is-active')"></button>
+        </div>
 
-<li> <span class="annee">2020-2022 </span> : Parcours des Ecoles d’Ingénieur Polytech Grenoble [Parcours mathématiques-informatique]</li>
-<li> <span class="annee"> 2015-2020 </span> : Suivi de la section européenne anglais </li>
-<li> <span class="annee"> 2017-2020 </span> : Suivi de cours dispensés en langues étrangères (anglais)</li>
-<li> <span class="annee"> 2018-2020 </span> : Apprentissage Anticipé de la Conduite (formation théorique et pratique) :   </li>
+        <div class="icon-contact">
 
-<span class="detailAAC"> <li class="AAC_puce"> <span class="annee">janvier à mars 2018 </span>: Suivi régulier et assidu de leçons de code </li>
-<li class="AAC_puce"> <span class="annee">mars 2018</span> : Validation de l’épreuve-théorique de l’examen du permis de conduire (Code) </li>
-<li class="AAC_puce"> <span class="annee">mars 2018 à avril 2018</span>: Suivi des 20h de leçons de conduite </li>
-<li class="AAC_puce"> <span class="annee">avril 2018</span> : Evaluation de fin de formation initiale </li>
-<li class="AAC_puce"> <span class="annee">aout 2020</span> : Réussite de l’épreuve pratique de l’examen du permis de conduire</li>
-<li class="AAC_puce"> <span class="annee">octobre 2020 </span> : Obtention du permis de conduire</li> </span>
+        </div>
 
-<li> <span class="annee"> 2021 </span> : Stage professionnel au sein du Conseil Départemental de l’Oise (1 mois)</li>
-<li> <span class="annee"> 2020 </span> : Obtention du Baccalauréat (Série S - mention bien – 15/20) </li>
-<li> <span class="annee"> 2019 </span> : Participation à la Journée Défense et Citoyenneté</li>
-<li> <span class="annee"> 2018 </span> : Validation de la Certification Cambridge English </li>
-<li> <span class="annee"> 2017  </span> : Obtention du Diplôme National du Brevet (mention très bien – 17/20) </li>
-<li> <span class="annee"> 2017 </span> : Stage au sein des services de la Direction Numérique du Conseil Départemental (1 semaine)</li>
-<li> <span class="annee"> 2017 </span> : Attestation de sécurité routière II (Assr2)</li>
-<li> <span class="annee"> 2016 </span> : Obtention du Brevet informatique et internet (B2i)</li>
-<li> <span class="annee"> 2016 </span> : Participation à un Séjour linguistique en Allemagne (1 semaine – échange scolaire)</li>
-<li> <span class="annee"> 2015 </span> : Participation à un Séjour linguistique en Angleterre (1 semaine – famille d’accueil) </li>
-<li> <span class="annee"> 2015 </span> : Attestation de sécurité routière I (Assr1)</li>
-<li> <span class="annee"> 2013 </span> : Suivi du programme d’initiation aux Premiers Secours</li>
-<li> <span class="annee"> 2011 </span> : Obtention du Brevet d’endurance </li>
-<li> <span class="annee"> 2011 </span> : Obten tion du Brevet de  natation (25m & 50m)</li> 
+          <div class="icon-contact">
+          <a href="https://www.linkedin.com/in/tobiassavary" target="_blank"> 
+            <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin-in" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-linkedin-in fa-w-14 fa-5x">
+              <path fill="currentColor" d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" class="">
+              </path>
+            </svg> 
+          </a>
+          </div>
+          <div class="icon-contact">
 
-<h3> Activités & centres d’intérêts extra-scolaires </h3>
+          </div>
+          <div class="icon-contact">
+          <a href="https://github.com/TobiasInfo" target="_blank"> <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="svg-inline--fa fa-github fa-w-16 fa-3x"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" class=""></path></svg> </a>
+          </div>
+        
 
-<p>
-<li> Garde d’enfants et aide aux devoirs (depuis 2017) </li>
-<li> Cyclisme (loisirs & détente) avec participation à divers évènements sportifs (rencontres, échanges sportifs et courses cyclistes amateur – parcours sportifs de 50km à 100 km) – suivi des différents tours, des compétiteurs, et des résultats </li>
-<li> Natation (loisirs & détente)</li>
-<li> Tennis de Table : (licencié depuis 2015) avec participation aux rencontres sportives (1h30/semaine) </li>
-<li> Tennis : licencié de 2009 à 2014 avec participation aux rencontres sportives</li>
-<li> Intéressé également par la programmation, les courses cyclistes, quelques jeux-vidéos, les reportages et enquêtes.</li>
-  </p>
-</body>
+        <div class="icon-contact">
+
+        </div>
+
+        <div class="icon-contact">
+          <a onclick="document.getElementById('modal-telephone').classList.add('is-active')">
+            <img src="img/icons8-téléphone-50.png" alt="Phone" width="32" height="32">
+          </a>
+        </div>
+
+        <div class="modal" id="modal-telephone">
+          <div class="modal-background"></div>
+          <div class="modal-content">
+            <div class="box">
+              <p>Phone : +33 7 65 21 77 91</p>
+            </div>
+          </div>
+          <button class="modal-close is-large" aria-label="close" onclick="document.getElementById('modal-telephone').classList.remove('is-active')"></button>
+        </div>
+
+        </div>
+      </div>
+    </section>
+
+    <footer class = "has-background-black-ter">
+      <div class="has-text-centered has-text-light" > 
+        <p>Copyright © 2021 Tobias SAVARY</p>
+      </div>
+    </footer>
+  </body>
 </html>

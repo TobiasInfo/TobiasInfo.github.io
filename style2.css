@@ -1,0 +1,188 @@
+.navbar {
+  position: fixed;
+  width: 100%;  
+}
+
+.is-rounded {
+    border-radius: 5%;
+}
+
+#education ul {
+  list-style:inside;
+  margin-left: 1em;
+  margin-top: 1em;
+}
+
+#CDO ul {
+  list-style:inside;
+  margin-left: 1em;
+  margin-top: 1em;
+}
+
+#Tobias {
+  border-radius: 50%;
+  width: 20vw;
+}
+
+#skills ul {
+  list-style:inside;
+  margin-left: 1em;
+  margin-top: 1em;
+}
+
+.icon-contact{
+  width: 32px;
+  height: 32px;
+}
+
+
+h2 {
+  padding-left: 1em !important;
+}
+
+#cursor {
+    animation: cursor 1s infinite;
+  }
+  
+  @keyframes cursor {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  .grid-3-4 {
+    display: grid;
+    grid-template-columns: 1fr 4fr 2fr;
+    grid-template-rows: 50px 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    /* grid-auto-rows: 100px; */
+    /* grid-template-areas:
+    "a a a a a b b"
+    "a a a a a b b"
+    "c c c c c d d"
+    "c c c c c d d";   */
+    /* align-items: start; */
+  }
+  
+  /* .grid-3-4-left {
+    border: 1px solid blue;
+    grid-column: 2 / 3;
+  }
+  
+  .grid-3-4-right {
+    grid-column: 3 / 4;
+    border: 1px solid blue;
+
+    margin-left: auto !important;
+    margin-right: auto !important;
+  } */
+
+.education {
+  grid-column: 2 / 3;
+  grid-row: 1/1;
+  margin-bottom: 0;
+}
+  .grid-3-4-left-UTC {
+    grid-column: 2 / 3;
+    grid-row : 2/5;
+  }
+  
+  .grid-3-4-left-UTC-Content {
+    grid-column: 2 / 3;
+    grid-row : 3/4;
+  }
+
+   .grid-3-4-left-Polytech {
+    grid-column: 2 / 3;
+    grid-row : 4/5;
+  }
+
+   .grid-3-4-left-Polytech-Content {
+    grid-column: 2 / 3;
+    grid-row : 5/6;
+  }
+
+  /* .grid-3-4-right {
+    grid-column: 3 / 4;
+    border: 1px solid blue;
+
+    margin-left: auto !important;
+    margin-right: auto !important;
+  } */
+
+  .grid-3-4-right-UTC {
+    grid-column: 3 / 4;
+    grid-row : 2/3;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .grid-3-4-right-Polytech {
+    grid-column: 3 / 4;
+    grid-row : 3/4;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .grid-date{
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  .circle {
+    padding: 15px 20px 20px;
+    border-radius: 50%;
+    background-color: #e1072b;
+    color: #f9fafc;
+    max-height: 60px;
+    max-width: 150px;
+    z-index: 2;
+  }
+
+
+.timeline .vertical-line {
+
+    content: "";
+    position: absolute;
+    border-left: 3px solid #e18a07;
+    z-index: 1;
+    height: 100%;
+    left: 50%;
+
+}
+
+/* 
+.allign-UTC {
+  border: 1px solid green;
+
+  grid-row: 1/2;
+}
+
+.allign-UTC-present {
+  border: 1px solid green;
+  
+
+  grid-row: 1/2;
+}
+
+.allign-polytech {
+  border: 1px solid green;
+
+  grid-row: 3/4;
+}
+
+.allign-polytech-2022 {
+  border: 1px solid green;
+
+  grid-row: 3/4;
+} */
+
+/* .allign-UTC, .allign-UTC-present, .allign-polytech, .allign-polytech-2022 {
+grid-row: 1/2;
+} */
